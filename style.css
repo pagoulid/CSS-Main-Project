@@ -1,0 +1,15 @@
+/*@font-face {
+    font-family: 'Roboto-Black-Italic';
+    src: url(fonts/Roboto-BlackItalic.ttf) format('truetype');
+    font-style: italic;
+}
+
+h1{
+    font-family: 'Roboto-Black-Italic',sans-serif;
+    font-style: italic;
+}*/
+
+.first-section-container{
+    display:flex;
+    flex-direction: row;
+}
