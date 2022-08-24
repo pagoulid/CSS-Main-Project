@@ -9,7 +9,124 @@ h1{
     font-style: italic;
 }*/
 
-.first-section-container{
-    display:flex;
-    flex-direction: row;
+/*fonts*/
+@font-face {
+    font-family: 'Roboto-Black-Italic';
+    src: url(fonts/Roboto-BlackItalic.ttf) format('truetype');
+    font-style: italic;
 }
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(fonts/Roboto-Bold.ttf) format('truetype');
+    
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Regular.ttf) format('truetype');
+    
+}
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url(fonts/Roboto-Thin.ttf) format('truetype');
+    
+}
+/*fonts*/
+button{
+    
+    font-family: 'Roboto-Bold',sans-serif;
+    font-size: 18px;
+    color: #E5E7EB;
+    background-color: inherit;
+    
+
+}
+/*first section -> container1(logo,links) , container2(content,placeholder)*/
+.first-section{
+    height:70vh;
+    background-color: #1F2937;
+}
+.first-section .container{
+    display: flex;
+    flex-direction: row;
+    
+}
+.first-section #container_2{
+    justify-content: center;
+}
+
+
+    /*Group styling*/
+.first-section #container_1 .logo,.first-section #container_2 .content .title{
+    color: #F9FAF8;
+    font-family:'Roboto-Bold',sans-serif;
+}
+.first-section #container_1 .links a,.first-section #container_2 .content .text,.first-section #container_2 .img-placeholder p{
+    font-size: 18px;
+    color: #E5E7EB;
+    font-family: 'Roboto',sans-serif;
+}
+
+.first-section #container_2 .button-block{
+    width:7rem;
+    background-color: #3882F6;
+    border-radius: 10%;
+    
+}
+    /*Group styling*/
+
+    /*container 1*/
+    
+    #container_1 .logo{
+        flex-grow: 3;
+        font-size:24px;
+        text-align: center;
+        margin-left: 5rem;
+    }
+    #container_1 .links{
+        list-style: none;
+        flex-grow: 2;
+        margin-left: 10rem;
+        
+    }
+    #container_1 .links li{
+        display: inline-block;
+        margin-left: 1rem;
+    }
+    /*container 1*/
+    /*container 2*/
+    #container_2{
+        margin-top: 3rem;
+        
+    }
+    #container_2 .content , #container_2 .img-placeholder {
+        width:30%;
+        
+    }
+    #container_2 .content .title{
+        font-size: 48px;
+    }
+    
+    
+    #container_2 .img-placeholder {
+        height:30vh;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        background-color: slategray;
+        
+
+    }
+    #container_2 .img-placeholder p{
+        margin-top: 6rem;
+        text-align: center;
+    }
+
+    
+   
+    /*container 2*/
+/*
+
+*/
+    /*flex item 1*/
+    /*flex item 2*/
+    /*flex item 2*/
+/*first section*/
