@@ -1,19 +1,10 @@
-/*@font-face {
-    font-family: 'Roboto-Black-Italic';
-    src: url(fonts/Roboto-BlackItalic.ttf) format('truetype');
-    font-style: italic;
-}
 
-h1{
-    font-family: 'Roboto-Black-Italic',sans-serif;
-    font-style: italic;
-}*/
 
 /*fonts*/
 @font-face {
-    font-family: 'Roboto-Black-Italic';
-    src: url(fonts/Roboto-BlackItalic.ttf) format('truetype');
-    font-style: italic;
+    font-family: 'Roboto-Light-Italic';
+    src: url(fonts/Roboto-LightItalic.ttf) format('truetype');
+    
 }
 @font-face {
     font-family: 'Roboto-Bold';
@@ -32,8 +23,10 @@ h1{
 }
 /*fonts*/
 /*General*/
-.sub-section{
-    height:50vh;
+*{
+    padding: 0;
+    margin: 0;
+    
 }
 button{
     
@@ -75,6 +68,7 @@ button{
 .hero-section{
     height:70vh;
     background-color: #1F2937;
+    padding-top:1rem;
 }
 
 .hero-section #container_2{
@@ -132,6 +126,7 @@ button{
 /*hero section*/
 /*sub section 1*/
 #sub_section_1{
+    height:60vh;
     padding:2rem;
 }
 #sub_section_1 .title{
@@ -149,6 +144,7 @@ button{
 }
 #sub_section_1 .container .content{
     height:50%;
+    padding-left:3rem;
 }
         /*NOTE: Must define parent height in order apply height and visualize empty block*/
 #sub_section_1 .container .content .square-block{
@@ -167,3 +163,29 @@ button{
 
 
 /*sub section 1*/
+/*sub section 2*/
+#sub_section_2{
+    height:30vh;
+    padding:5rem;
+    background-color: #E5E7EB;
+}
+#sub_section_2 .content{
+    width:60%;
+    margin:auto;
+    margin-top: 1rem;
+
+}
+#sub_section_2 .content .quote{
+    color: #1F2937;
+    font-size: 36px;
+    font-family: 'Roboto-Light-Italic',sans-serif;
+}
+#sub_section_2 .content .ref-quote{
+    color: #1F2937;
+    font-size: 15px;
+    font-family: 'Roboto-Bold',sans-serif;
+    text-align: right;
+
+}
+
+/*sub section 2*/
