@@ -34,6 +34,8 @@ button{
     font-size: 18px;
     color: #E5E7EB;
     background-color: inherit;
+    border-radius: 5px;
+    width:6rem;
     
 
 }
@@ -190,3 +192,38 @@ button{
 }
 
 /*sub section 2*/
+/*sub section 3*/
+#sub_section_3{
+    height:30vh;
+}
+#sub_section_3 .content{
+    width:60%;
+    height:50%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:5rem auto;
+    background-color: #3882F6;
+    border-radius: 5px;
+}
+#sub_section_3 .content .action-text{
+    flex-grow:0.3;
+}
+#sub_section_3 .content .action-text .title{
+    font-size: 20px;
+    font-family: 'Roboto-Bold',sans-serif;
+    color:#F9FAF8;
+}
+#sub_section_3 .content .action-text .text{
+   
+    font-size: 10px;
+    font-family: 'Roboto-Light-Italic',sans-serif;
+    color:#F9FAF8;
+}
+#sub_section_3 .content button{
+    height: 30%;
+    margin-left:2rem;
+    border:3px solid #F9FAF8;
+}
+/*sub section 3*/
