@@ -31,6 +31,10 @@ h1{
     
 }
 /*fonts*/
+/*General*/
+.sub-section{
+    height:50vh;
+}
 button{
     
     font-family: 'Roboto-Bold',sans-serif;
@@ -40,39 +44,42 @@ button{
     
 
 }
-/*first section -> container1(logo,links) , container2(content,placeholder)*/
-.first-section{
+
+    /*Group styling*/
+
+    .hero-section .container,#sub_section_1 .container{
+        display: flex;
+        flex-direction: row;
+            
+    }
+   
+    .hero-section #container_1 .logo,.hero-section #container_2 .content .title{
+        color: #F9FAF8;
+        font-family:'Roboto-Bold',sans-serif;
+    }
+    .hero-section #container_1 .links a,.hero-section #container_2 .content .text,.hero-section #container_2 .img-placeholder p{
+        font-size: 18px;
+        color: #E5E7EB;
+        font-family: 'Roboto',sans-serif;
+    }
+    
+    .hero-section #container_2 .button-block{
+        width:7rem;
+        background-color: #3882F6;
+        border-radius: 10%;
+        
+    }
+        /*Group styling*/
+/*General*/
+/*hero section -> container1(logo,links) , container2(content,placeholder)*/
+.hero-section{
     height:70vh;
     background-color: #1F2937;
 }
-.first-section .container{
-    display: flex;
-    flex-direction: row;
-    
-}
-.first-section #container_2{
+
+.hero-section #container_2{
     justify-content: center;
 }
-
-
-    /*Group styling*/
-.first-section #container_1 .logo,.first-section #container_2 .content .title{
-    color: #F9FAF8;
-    font-family:'Roboto-Bold',sans-serif;
-}
-.first-section #container_1 .links a,.first-section #container_2 .content .text,.first-section #container_2 .img-placeholder p{
-    font-size: 18px;
-    color: #E5E7EB;
-    font-family: 'Roboto',sans-serif;
-}
-
-.first-section #container_2 .button-block{
-    width:7rem;
-    background-color: #3882F6;
-    border-radius: 10%;
-    
-}
-    /*Group styling*/
 
     /*container 1*/
     
@@ -83,8 +90,8 @@ button{
         margin-left: 5rem;
     }
     #container_1 .links{
-        list-style: none;
         flex-grow: 2;
+        list-style: none;
         margin-left: 10rem;
         
     }
@@ -104,6 +111,8 @@ button{
     }
     #container_2 .content .title{
         font-size: 48px;
+        font-family:'Roboto-Bold',sans-serif;
+
     }
     
     
@@ -119,14 +128,42 @@ button{
         margin-top: 6rem;
         text-align: center;
     }
-
-    
-   
     /*container 2*/
-/*
+/*hero section*/
+/*sub section 1*/
+#sub_section_1{
+    padding:2rem;
+}
+#sub_section_1 .title{
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Roboto-Bold',sans-serif;
+    color:  #1F2937;
+}
+#sub_section_1 .container{
+    width:50%;
+    list-style: none;
+    margin:auto;
+    padding-top:5rem;
 
-*/
-    /*flex item 1*/
-    /*flex item 2*/
-    /*flex item 2*/
-/*first section*/
+}
+#sub_section_1 .container .content{
+    height:50%;
+}
+        /*NOTE: Must define parent height in order apply height and visualize empty block*/
+#sub_section_1 .container .content .square-block{
+    width:60%;
+    height:16vh;
+    border: 3px solid  #3882F6;
+    border-radius:15%;
+}
+#sub_section_1 .container .content .text{
+    width:60%;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    font-size:10px;
+    color: slategray;
+}
+
+
+/*sub section 1*/
