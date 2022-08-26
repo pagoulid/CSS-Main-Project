@@ -14,6 +14,7 @@ Hero Structure:
         - A content block(with a title,a paragraph,a button) , an image-placeholder block
 
 Sub Section 1 Structure:
+
     Sub Section 1 consists of 1 header title and an unordered list as a flex container(with 4 list elements).
     Its list flex items are in a row direction.
     Each list flex item consists of :
@@ -22,10 +23,12 @@ Sub Section 1 Structure:
         - 1 small paragraph text
 
 Sub Section 2 Structure:
+
     Sub Section 2 consists of 1 content block containing a quote along with a reference, of who said the quote, 
     at the bottom of the relative text.
 
 Sub Section 3 Structure:
+
     Sub Section 3 consists of 1 content block which contains 
     another block(action) that contains:
 
