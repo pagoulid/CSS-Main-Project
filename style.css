@@ -227,3 +227,36 @@ button{
     border:3px solid #F9FAF8;
 }
 /*sub section 3*/
+/*footer*/
+footer{
+    background-color: #1F2937;
+    height:10vh;
+}
+footer .content{
+    width:30%;
+    margin:auto;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+footer .content .item{
+    display:inline-block;
+    
+}
+footer .content .text,footer .content .sign p{
+    font-size:0.6rem;
+    font-family: 'Roboto-Thin',sans-serif;
+    color: #F9FAF8;
+}
+footer .content .sign{
+    width:1.5%;
+    height:1vh;
+    margin-left: 0.3rem;
+    border:1px solid #F9FAF8;
+    border-radius: 50%;
+}
+footer .content .sign p{
+    position:relative;
+    top:-25%;
+}
+
+/*footer*/
