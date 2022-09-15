@@ -174,7 +174,7 @@ button{
     background-color: #E5E7EB;
 }
 #sub_section_2 .content{
-    width:60%;
+    width:90%;
     margin:auto;
     margin-top: 1rem;
 
@@ -324,6 +324,11 @@ footer .content .sign p{
         width: 50%;
     }
     /*sub section 1*/
+    /*sub section 2*/
+    #sub_section_2 .content .quote{
+        font-size: 15px;
+    }
+    /*sub section 2*/
 }
 
 @media screen and (min-width:361px) and (max-width:700px){
@@ -358,5 +363,16 @@ footer .content .sign p{
         height: 8vh;
     }
     /*sub section 1*/
-    
+    /*sub section 2*/
+    #sub_section_2{
+        height:35vh;
+        padding:5vw;
+    }
+    #sub_section_2 .content{
+        margin:0;
+    }
+    #sub_section_2 .content .quote{
+        font-size: 27px;
+    }
+    /*sub section 2*/
 }
