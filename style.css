@@ -265,6 +265,7 @@ footer .content .sign p{
 
     
 @media screen and (max-width:360px){
+    /*hero section */
     .hero-section #container_1 .logo , .hero-section #container_1 .links{
         margin-left: 15%;
     }
@@ -301,6 +302,28 @@ footer .content .sign p{
         
         height: 1.2rem;
     }
+    /*hero section */
+    /*sub section 1*/
+    #sub_section_1 .container{
+        flex-direction: column;
+        width: 100%;
+        padding-top: 2rem;
+    }
+    #sub_section_1 .container .content{
+        width:inherit;
+    }
+    #sub_section_1 .container .content .square-block, #sub_section_1 .container .content .text{
+        display: inline-block;
+        
+    }
+    #sub_section_1 .container .content .square-block{
+        width: 20%;
+        height: 5vh;
+    }
+    #sub_section_1 .container .content .text{
+        width: 50%;
+    }
+    /*sub section 1*/
 }
 
 @media screen and (min-width:361px) and (max-width:700px){
@@ -317,5 +340,23 @@ footer .content .sign p{
         width: 40%;
     }
     /*hero section*/
+    /*sub section 1*/
+    #sub_section_1{
+        padding: 5%;
+    }
+    #sub_section_1 .container{
+        width:inherit;
+        margin:0;
+    }
+    #sub_section_1 .container .content{
+       
+        width:20%;
+        height: 30%;
+        padding-left: 8%;
+    }
+    #sub_section_1 .container .content .square-block{
+        height: 8vh;
+    }
+    /*sub section 1*/
     
 }
