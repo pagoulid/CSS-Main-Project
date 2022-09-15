@@ -1,6 +1,7 @@
 
 
 /*fonts*/
+
 @font-face {
     font-family: 'Roboto-Light-Italic';
     src: url(fonts/Roboto-LightItalic.ttf) format('truetype');
@@ -40,9 +41,9 @@ button{
 
 }
 
-    /*Group styling*/
+    /*Group styling*//*.hero-section .container*/
 
-    .hero-section .container,#sub_section_1 .container{
+    .hero-section #container_1,.hero-section #container_2,#sub_section_1 .container{
         display: flex;
         flex-direction: row;
             
@@ -260,3 +261,61 @@ footer .content .sign p{
 }
 
 /*footer*/
+
+
+    
+@media screen and (max-width:360px){
+    .hero-section #container_1 .logo , .hero-section #container_1 .links{
+        margin-left: 15%;
+    }
+    .hero-section #container_2{
+        justify-self: unset;
+        display:block;
+        margin-top:1.5rem;
+        padding:20%;
+    }
+    .hero-section #container_2 .img-placeholder{
+        
+        display:none;
+    }
+    .hero-section #container_2 .content{
+        width:100%;
+    }
+    .hero-section #container_2 .content .title {
+        font-size: 20px;
+        font-family: 'Roboto',sans-serif;
+    }
+    .hero-section #container_2 .content .text {
+        font-size: 10px;
+        font-family: 'Roboto-Light-Italic',sans-serif;
+        margin-top: 5rem;
+    }
+    .hero-section #container_2 .content .button-block {
+       margin-top:8rem;
+       margin-left: 50%;
+       width:5rem;
+    }
+    button{
+        font-family: 'Roboto-Thin',sans-serif;
+        font-size: smaller;
+        
+        height: 1.2rem;
+    }
+}
+
+@media screen and (min-width:361px) and (max-width:700px){
+    /*hero section*/
+    .hero-section #container_1 .links {
+        margin-left:20%;
+    }
+
+    .hero-section #container_2 .content .title {
+        font-size: 30px;
+        font-family: 'Roboto',sans-serif;
+    }
+    .hero-section #container_2 .content , .hero-section #container_2 .img-placeholder {
+        width: 40%;
+    }
+    /*hero section*/
+    
+}
