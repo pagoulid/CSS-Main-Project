@@ -48,25 +48,7 @@ button{
 
 }
 
-    /*Group styling*//*.hero-section .container*/
-
-    /*.hero-section #container_1,.hero-section #container_2,#sub_section_1 .container{
-        display: flex;
-        flex-direction: row;
-            
-    }*/
-   
-    .hero-section #container_1 .logo,.hero-section #container_2 .content .title{
-        color: #F9FAF8;
-        font-family:'Roboto-Bold',sans-serif;
-    }
-    .hero-section #container_1 .links a,.hero-section #container_2 .content .text,.hero-section #container_2 .img-placeholder p{
-        font-size: 18px;
-        color: #E5E7EB;
-        font-family: 'Roboto',sans-serif;
-    }
-    
-    .hero-section #container_2 .button-block{
+    .hero-section  .button-block{
         width:7rem;
         background-color: #3882F6;
         border-radius: 10%;
@@ -77,10 +59,11 @@ button{
 .dark-background{ background-color: var(--dark-bckrnd-clr);}
 .light-background{ background-color: var(--light-bckrnd-clr);}
 .section-content{
-    max-width:1600px;
+    max-width:1200px;
     padding:var(--section-padding-lg);
     margin:0 auto;
 }
+.box-content{width:48%;}
 @media only screen and (min-width:800px){
     .section-content{ padding:var(--section-padding-md);}
 }
@@ -90,60 +73,32 @@ button{
     justify-content:space-between;
 }
 
-a,p,h1,h2,h3,h4{color:white;}
+a,p,h1,h2,h3,h4{
+    color:white;
+    font-family:'Roboto',sans-serif;
 
-   /* #container_1 .logo{
-        flex-grow: 3;
-        font-size:24px;
-        text-align: center;
-        margin-left: 5rem;
-    }
-    #container_1 .links{
-        flex-grow: 2;
-        list-style: none;
-        margin-left: 10rem;
-        
-    }
-    #container_1 .links li{
-        display: inline-block;
-        margin-left: 1rem;
-    }*/
+}
+a,p{font-size:18px;}
+p{margin-bottom:0;}
+.links li{
+    display:flex;
+    margin:auto;
+}
+   
     /*container 1*/
     /*container 2*/
-    #container_2{
-        margin-top: 3rem;
-        
-    }
-    #container_2 .content , #container_2 .img-placeholder {
-        width:30%;
-        
-    }
-    #container_2 .content .title{
-        font-size: 48px;
-        font-family:'Roboto-Bold',sans-serif;
 
-    }
-    
-    
-    #container_2 .img-placeholder {
-        /*height:30vh;*/
-        margin-left: 2rem;
-        margin-top: 2rem;
+    .img-placeholder {
+        height:100%;
+        max-width:400px;
+        margin-left:auto;
         background-color: slategray;
-        
-
     }
-    #container_2 .img-placeholder p{
-        margin-top: 6rem;
-        text-align: center;
-    }
+    
     /*container 2*/
 /*hero section*/
 /*sub section 1*/
-#sub_section_1{
-    /*height:50vh;*/
-    /*padding:2rem;*/
-}
+
 #sub_section_1 .title{
     text-align: center;
     font-size: 36px;
@@ -206,10 +161,7 @@ a,p,h1,h2,h3,h4{color:white;}
 
 /*sub section 2*/
 /*sub section 3*/
-#sub_section_3{
-    /*height:30vh;*/
 
-}
 #sub_section_3 .content{
     width:60%;
     height:50%;
@@ -274,140 +226,5 @@ footer .content .sign p{
 
 
     
-@media screen and (max-width:360px){
-    /*hero section */
-    .hero-section #container_1 .logo , .hero-section #container_1 .links{
-        margin-left: 15%;
-    }
-    .hero-section #container_2{
-        justify-self: unset;
-        display:block;
-        margin-top:1.5rem;
-        padding:20%;
-    }
-    .hero-section #container_2 .img-placeholder{
-        
-        display:none;
-    }
-    .hero-section #container_2 .content{
-        width:100%;
-    }
-    .hero-section #container_2 .content .title {
-        font-size: 20px;
-        font-family: 'Roboto',sans-serif;
-    }
-    .hero-section #container_2 .content .text {
-        font-size: 10px;
-        font-family: 'Roboto-Light-Italic',sans-serif;
-        margin-top: 5rem;
-    }
-    .hero-section #container_2 .content .button-block {
-       margin-top:8rem;
-       margin-left: 50%;
-       width:5rem;
-    }
-    button{
-        font-family: 'Roboto-Thin',sans-serif;
-        font-size: smaller;
-        
-        height: 1.2rem;
-    }
-    /*hero section */
-    /*sub section 1*/
-    #sub_section_1 .container{
-        flex-direction: column;
-        width: 100%;
-        padding-top: 2rem;
-    }
-    #sub_section_1 .container .content{
-        width:inherit;
-    }
-    #sub_section_1 .container .content .square-block, #sub_section_1 .container .content .text{
-        display: inline-block;
-        
-    }
-    #sub_section_1 .container .content .square-block{
-        width: 20%;
-        height: 5vh;
-    }
-    #sub_section_1 .container .content .text{
-        width: 50%;
-    }
-    /*sub section 1*/
-    /*sub section 2*/
-    #sub_section_2 .content .quote{
-        font-size: 15px;
-    }
-    /*sub section 2*/
-    /*sub section 3 (margin  left of button is not 0)*/ 
-    #sub_section_3 .content{
-        flex-direction: column;
-        width: 80%;
-        height: 70%;
-    }
-    #sub_section_3 .content .action-text .text{
-        text-align: center;
-        margin-top: 5px;
-    }
-    #sub_section_3 .content button{
-        display: block;
-        margin-top: 1rem;
-       margin-left: 0px;
-    }
-    /*sub section 3 (margin  left of button is not 0)*/ 
 
-}
 
-@media screen and (min-width:361px) and (max-width:700px){
-    /*hero section*/
-    .hero-section #container_1 .links {
-        margin-left:20%;
-    }
-
-    .hero-section #container_2 .content .title {
-        font-size: 30px;
-        font-family: 'Roboto',sans-serif;
-    }
-    .hero-section #container_2 .content , .hero-section #container_2 .img-placeholder {
-        width: 40%;
-    }
-    /*hero section*/
-    /*sub section 1*/
-    #sub_section_1{
-        padding: 5%;
-    }
-    #sub_section_1 .container{
-        width:inherit;
-        margin:0;
-    }
-    #sub_section_1 .container .content{
-       
-        width:20%;
-        height: 30%;
-        padding-left: 8%;
-    }
-    #sub_section_1 .container .content .square-block{
-        height: 8vh;
-    }
-    /*sub section 1*/
-    /*sub section 2*/
-    #sub_section_2{
-        height:35vh;
-        padding:5vw;
-    }
-    #sub_section_2 .content{
-        margin:0;
-    }
-    #sub_section_2 .content .quote{
-        font-size: 27px;
-    }
-    /*sub section 2*/
-    /*sub section 3*/
-    #sub_section_3 .content{
-        flex-direction: column;
-    }
-    #sub_section_3 .content button{
-        margin-left: 0;
-    }
-    /*sub section 3*/
-}
