@@ -1,4 +1,10 @@
+:root{
+    --dark-bckrnd-clr:#1F2937;
+    --light-bckrnd-clr:#E5E7EB;
+    
 
+    --section-padding: 1rem 3rem;
+}
 
 /*fonts*/
 
@@ -43,11 +49,11 @@ button{
 
     /*Group styling*//*.hero-section .container*/
 
-    .hero-section #container_1,.hero-section #container_2,#sub_section_1 .container{
+    /*.hero-section #container_1,.hero-section #container_2,#sub_section_1 .container{
         display: flex;
         flex-direction: row;
             
-    }
+    }*/
    
     .hero-section #container_1 .logo,.hero-section #container_2 .content .title{
         color: #F9FAF8;
@@ -67,19 +73,15 @@ button{
     }
         /*Group styling*/
 /*General*/
-/*hero section -> container1(logo,links) , container2(content,placeholder)*/
-.hero-section{
-    height:70vh;
-    background-color: #1F2937;
-    padding-top:1rem;
+.dark-background{ background-color: var(--dark-bckrnd-clr);}
+.light-background{ background-color: var(--light-bckrnd-clr);}
+.section-content{padding:var(--section-padding);}
+
+.flex-around{
+    display:flex;
+    justify-content:space-around;
 }
 
-.hero-section #container_2{
-    justify-content: center;
-}
-
-    /*container 1*/
-    
     #container_1 .logo{
         flex-grow: 3;
         font-size:24px;
@@ -114,7 +116,7 @@ button{
     
     
     #container_2 .img-placeholder {
-        height:30vh;
+        /*height:30vh;*/
         margin-left: 2rem;
         margin-top: 2rem;
         background-color: slategray;
@@ -129,8 +131,8 @@ button{
 /*hero section*/
 /*sub section 1*/
 #sub_section_1{
-    height:50vh;
-    padding:2rem;
+    /*height:50vh;*/
+    /*padding:2rem;*/
 }
 #sub_section_1 .title{
     text-align: center;
@@ -169,7 +171,7 @@ button{
 /*sub section 1*/
 /*sub section 2*/
 #sub_section_2{
-    height:30vh;
+    /*height:30vh;*/
     padding:5rem;
     background-color: #E5E7EB;
 }
@@ -195,7 +197,8 @@ button{
 /*sub section 2*/
 /*sub section 3*/
 #sub_section_3{
-    height:30vh;
+    /*height:30vh;*/
+
 }
 #sub_section_3 .content{
     width:60%;
@@ -229,10 +232,7 @@ button{
 }
 /*sub section 3*/
 /*footer*/
-footer{
-    background-color: #1F2937;
-    height:10vh;
-}
+
 footer .content{
     width:30%;
     margin:auto;
