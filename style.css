@@ -197,26 +197,27 @@ footer .content{
     width:30%;
     margin:auto;
     text-align: center;
-    padding-top: 1.5rem;
+    position:relative;
 }
-.footer-item{
-    display:inline-block;
-    
-}
+.footer-item{display:inline-block;}
 footer .text{
-    font-size:0.6rem;
+    font-size:0.8rem;
     color: #F9FAF8;
 }
-footer .content .sign{
-    width:1.5%;
-    height:1vh;
-    margin-left: 0.3rem;
+footer  .sign{
+    /*width:1.5%;
+    height:1vh;*/
+    width:15px;
+    height:15px;
+    /*margin-left: 0.3rem;*/
     border:1px solid #F9FAF8;
     border-radius: 50%;
+    position:relative;
+    top:-0.25rem;
 }
 footer .content .sign p{
     position:relative;
-    top:-25%;
+    top:-4px;
 }
 
 /*footer*/
