@@ -3,19 +3,41 @@
     <head>
         <meta charset="utf-8">
         <title>Main CSS Project</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <nav class="container-fluid dark-background">
             <div class="section-content">
-            <div class="flex-around">
+            <div class="nav-desktop flex-around">
                 <h1 class="logo">Header Logo</h1>
                 <ul class="links flex-around gap-2 ps-0">
                     <li><a class="nav-item">header link 1</a></li>
                     <li><a class="nav-item">header link 2</a></li>
                     <li><a class="nav-item">header link 3</a></li>
                 </ul>
+
+            </div>
+
+            <div class="nav-mobile flex-around">
+                <h1 class="logo">Header Logo</h1>
+                <div class="nav-dropdown-wrapper">
+                    <div class="nav-icon-block">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <div class="dropdown-list hidden">
+                        <ul class="links flex-column flex-around gap-2 mb-0 ps-0 py-3">
+                            <li><a class="nav-item">header link 1</a></li>
+                            <li><a class="nav-item">header link 2</a></li>
+                            <li><a class="nav-item">header link 3</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                
 
             </div>
             </div>
@@ -111,6 +133,15 @@
             </div>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script>
+            var mobile_links = document.querySelector('.nav-mobile .dropdown-list');
+            $('.nav-icon-block').click(function(){
+
+                mobile_links.classList.toggle('hidden');
+            });
+
+        </script>
     </body>
 </html>
