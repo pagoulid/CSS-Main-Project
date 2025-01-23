@@ -1,8 +1,8 @@
 :root{
-    --dark-bckrnd-clr:#1F2937;
-    --light-bckrnd-clr:#E5E7EB;
+    --dark-clr:#1F2937;
+    --light-clr:#E5E7EB;
     
-
+    --section-padding-sm: 1rem 1.5rem;
     --section-padding-md: 1rem 3rem;
     --section-padding-lg: 1rem 5rem;
 }
@@ -56,16 +56,21 @@ button{
     }
         /*Group styling*/
 /*General*/
-.dark-background{ background-color: var(--dark-bckrnd-clr);}
-.light-background{ background-color: var(--light-bckrnd-clr);}
+.dark-background{ background-color: var(--dark-clr);}
+.light-background{ background-color: var(--light--clr);}
 .section-content{
     max-width:1200px;
     padding:var(--section-padding-lg);
     margin:0 auto;
 }
 .box-content{width:48%;}
-@media only screen and (min-width:800px){
+@media only screen and (max-width:800px){
     .section-content{ padding:var(--section-padding-md);}
+}
+
+
+@media only screen and (max-width:600px){
+    .section-content{ padding:var(--section-padding-sm);}
 }
 
 .flex-around{
@@ -108,7 +113,7 @@ p{margin-bottom:0;}
     text-align: center;
     font-size: 36px;
     font-family: 'Roboto-Bold',sans-serif;
-    color:  #1F2937;
+    color:  var(--dark-clr);
 }
 .random-list{
     list-style: none;
@@ -151,18 +156,17 @@ p{margin-bottom:0;}
     margin-top: 1rem;
 
 }
-#sub_section_2 .content .quote{
-    color: #1F2937;
+.quote{
     font-size: 36px;
     font-family: 'Roboto-Light-Italic',sans-serif;
 }
-#sub_section_2 .content .ref-quote{
-    color: #1F2937;
+.ref-quote{
     font-size: 15px;
     font-family: 'Roboto-Bold',sans-serif;
     text-align: right;
 
 }
+.quote, .ref-quote{ color: var(--dark-clr);}
 
 /*sub section 2*/
 /*sub section 3*/
@@ -240,9 +244,15 @@ footer .content .sign p{
         width:76px;
         height:73px;
     }
+    .quote{ font-size:30px;}
 }
-
+@media only screen and (max-width:700px){
+    .quote{ font-size:25px;}
+}
 @media only screen and (max-width:600px){
+    .quote{ font-size:18px;}
+    #sub_section_2{ padding:1rem;}
+    #sub_section_2 .content{ width:100%;}
     a,p{font-size:16px;}
     .hero-section .button-block{
         width:100%;
